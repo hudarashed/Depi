@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- <base href="/">  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+   
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="home.html">
+                    <img src="images/freshcart-logo.svg" alt="FreshCart" width="150" id="logoLink">
+                </a>
+    
+                <!-- Toggler for mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+               
+            </div>
+        </nav>
+    </header>
+    
+
+    <form id="registrationForm" class="rounded shadow w-75 mx-auto bg-light p-5 my-5" novalidate>
+        <div class="form-item mb-3">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-control" type="text" name="name" id="name" required pattern=".{3,8}">
+            <div class="invalid-feedback">Please enter a valid name.</div>
+        </div>
+    
+        <div class="form-item mb-3">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-control" type="email" name="email" id="email" required  >
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+        </div>
+    
+        <div class="form-item mb-3">
+            <label class="form-label" for="password">Password</label>
+            <input class="form-control" type="password" name="password" id="password" minlength="6" required pattern="\w{6,}" >
+            <div class="invalid-feedback">Please enter a valid password.</div>
+        </div>
+    
+        <div class="form-item mb-3">
+            <label class="form-label" for="password2">Confirm Password</label>
+            <input class="form-control" type="password" name="password2" id="password2" minlength="6" required pattern="\w{6,}">
+            <div class="invalid-feedback">Passwords must match.</div>
+        </div>
+    
+        <div class="form-item mb-3">
+            <label class="form-label" for="phone">Phone</label>
+            <input class="form-control" type="text" name="phone" id="phone" pattern="01[0125][0-9]{8}" required>
+            <div class="invalid-feedback">Please enter a valid 11-digit phone number.</div>
+        </div>
+    
+        <div class="form-item">
+            <button class="btn main-btn btn-block w-100 py-2" type="submit">Register</button>
+        </div>
+        <p class=" mt-3">Already have an account? <a class="text-decoration-none text-main fw-bold" href="login.html"> Login</a></p>
+
+    </form>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="container">
+         <div class="row">
+             <div class="col-sm-6 col-md-6 col-lg-3 ps-5">
+                 <h4 class="contact-us mb-4">Contact Us</h4>
+                 <p class="text-footer">Egypt, Giza.</p>
+                 <p class="text-footer">01017563238</p>
+                 <p class="text-footer">walaaelqady@gmail.com</p>
+                 <div class="link text-footer">
+                     <i class="icon-footer  fa-brands fa-facebook"></i>
+                     <i class="icon-footer  fa-brands fa-twitter"></i>
+                     <i class="icon-footer  fa-brands fa-instagram"></i>
+                     <i class="icon-footer  fa-brands fa-linkedin-in"></i>
+                 </div>
+             </div>
+             <div class="My-Account col-sm-6 col-md-6 col-lg-2">
+                 <h4 >My Account</h4>
+                 <p><a href="">> My Account</a></p>
+                 <p><a href="">> Order History</a></p>
+                 <p><a href="">> Wish List</a></p>
+                 <p><a href="">> Affiliates</a></p>
+                 <p><a href="">> Contact Us</a></p>
+             </div>
+             <div class="information col-sm-6 col-md-6 col-lg-2">
+                 <h4 >Information</h4>
+                 <p><a href="">> About Us</a></p>
+                 <p><a href="">> Delivery Information</a></p>
+                 <p><a href="">> Privacy Policy</a></p>
+                 <p><a href="">> Terms & Conditions</a></p>
+                 <p><a href="">> Blogs</a></p>
+             </div>
+             <div class="extras col-sm-6 col-md-6 col-lg-2">
+                 <h4 >Extras</h4>
+                 <p><a href="">> Site Map</a></p>
+                 <p><a href="">> Newsletter</a></p>
+                 <p><a href="">> Brands</a></p>
+                 <p><a href="">> Contact Us</a></p>
+                 <p><a href="">> Specials</a></p>
+             </div>
+             <div class="our-app col-sm-6 col-md-6 col-lg-3">
+                 <h4 >Our App</h4>
+                 <p class="text-footer" >Download our Apps and get
+                 <br>extra 15% Discount on your first Order…!</p>
+                 <div class="img d-flex gap-5 mt-4">
+                     <img class="footer-app " src="images/appstore-btn.svg" alt="">
+                     <img class="footer-app "  src="images/googleplay-btn.svg" alt="">
+                 </div>
+             </div>
+         </div>
+         <hr>
+         <div class="visa d-flex justify-content-start align-items-start ps-4">
+             <p class="text-dark">Payment Partners: </p>
+             <img class="ms-3 cursor-pointer " src="images/amazonpay.svg" alt="">
+             <img class="ms-3 cursor-pointer" src="images/mastercard.svg" alt="">
+             <img class="ms-3 cursor-pointer" src="images/paypal.svg" alt="">
+             <img class="ms-3 cursor-pointer" src="images/visa.svg" alt="">
+         </div>
+         <hr>
+         <footer class="d-flex justify-content-between align-items-center ps-4">
+             <div>
+                 <p class="text-muted fs-6">© 2022 - 2024 FreshCart eCommerce HTML Template.
+                 All rights reserved. Powered by
+                  <a class="text-decoration-none text-main " href="">Codescandy</a>.
+                 </p>
+             </div>
+             
+         </footer>
+        </div>
+     </section>
+    
+
+    
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
